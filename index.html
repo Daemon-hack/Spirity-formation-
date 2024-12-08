@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spirity - Devenez un pro</title>
+  <style>
+    /* Styles globaux */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f4f7;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      animation: fadeIn 1s ease-out;
+    }
+
+    /* Animation fade-in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* En-tête */
+    .header {
+      background: #3498db; /* Bleu moderne */
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .header img.logo {
+      width: 70px;
+      position: absolute;
+      top: 6px;
+      left: 2px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .header p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    /* Photo de profil */
+    .profile-section {
+      text-align: center;
+      padding: 30px;
+      background: #9b59b6; /* Violet */
+      color: white;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .profile-section img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ffffff;
+    }
+
+    .profile-section p {
+      font-size: 18px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* Services */
+    .services {
+      padding: 30px;
+      background: #ecf0f1; /* Gris clair */
+      animation: fadeIn 2s ease-out;
+    }
+
+    .services h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+      font-size: 22px;
+    }
+
+    .services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .services ul li {
+      margin: 15px 0;
+      padding-left: 25px;
+      position: relative;
+      font-size: 16px;
+    }
+
+    .services ul li:before {
+      content: '✔';
+      color: #27ae60; /* Vert */
+      position: absolute;
+      left: 0;
+    }
+
+    /* Section des prix */
+    .price {
+      text-align: center;
+      background: #e74c3c; /* Rouge */
+      color: white;
+      padding: 20px;
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    .price strong {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Formulaire d'inscription */
+    .form-section {
+      padding: 30px;
+      background: #f8f9fa; /* Gris très clair */
+      animation: fadeIn 3s ease-out;
+    }
+
+    .form-section h2 {
+      margin-bottom: 25px;
+      color: #2c3e50;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-group textarea {
+      resize: none;
+    }
+
+    .btn-submit {
+      background: #3498db; /* Bleu clair */
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s;
+      width: 100%;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .btn-submit:hover {
+      background: #2980b9; /* Bleu foncé */
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #34495e; /* Gris foncé */
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Conteneur principal -->
+  <div class="container">
+    <!-- En-tête avec logo -->
+    <div class="header">
+      <img src="logo.png" alt="Logo Spirity" class="logo">
+      <h1>Devenez un pro de l'informatique</h1>
+      <p>Avec Spirity, apprenez et réussissez en 2024</p>
+    </div>
+
+    <!-- Section photo de profil -->
+    <div class="profile-section">
+      <img src="profile.jpg" alt="Photo de profil">
+      <p><strong>Votre formateur : Spirity</strong></p>
+    </div>
+
+    <!-- Services -->
+    <div class="services">
+      <h2>Nos Astuces et Services</h2>
+      <ul>
+        <li>Programmation (HTML, CSS, JavaScript, PHP)</li>
+        <li>Formation Netflix, Canal+ et plus à vie</li>
+        <li>Formation en cracking (n'importe quel compte ou app)</li>
+        <li>Création de sites, d'affiches et de logos professionnels</li>
+      </ul>
+    </div>
+
+    <!-- Section des prix -->
+    <div class="price">
+      <p>Prix exceptionnellement à</p>
+      <strong>4000 FCFA</strong>
+    </div>
+
+    <!-- Formulaire d'inscription -->
+    <div class="form-section">
+      <h2>Inscrivez-vous maintenant</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="fullName">Nom et Prénom :</label>
+          <input type="text" id="fullName" placeholder="Entrez votre nom complet" required>
+        </div>
+        <div class="form-group">
+          <label for="age">Âge :</label>
+          <input type="number" id="age" placeholder="Entrez votre âge" required>
+        </div>
+        <div class="form-group">
+          <label for="facebook">Lien Facebook :</label>
+          <input type="url" id="facebook" placeholder="Entrez le lien vers votre profil Facebook" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Numéro de Téléphone :</label>
+          <input type="tel" id="phone" placeholder="Entrez votre numéro de téléphone" required>
+        </div>
+        <div class="form-group">
+          <label for="comments">Pourquoi voulez-vous suivre cette formation ?</label>
+          <textarea id="comments" rows="4" placeholder="Expliquez en quelques mots..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">S'inscrire</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer>
+    
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      // Récupérer les valeurs du formulaire
+      var fullName = document.getElementById("fullName").value;
+      var age = document.getElementById("age").value;
+      var facebook = document.getElementById("facebook").value;
+      var phone = document.getElementById("phone").value;
+      var comments = document.getElementById("comments").value;
+
+      // Créer le message à envoyer
+      var message = `Nouvelle inscription :\n\nNom : ${fullName}\nÂge : ${age}\nFacebook : ${facebook}\nTéléphone : ${phone}\nMotivation : ${comments}`;
+
+      // Envoyer le message au bot Telegram
+      var token = "7579522658:AAG6mX5HL8Q9GdSoHtVDhQC_ImDi8aEYMNk";
+      var chatId = "7104713412"; // ID de votre chat
+      var url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+      // Envoi de la requête avec fetch
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message,
+          parse_mode: "Markdown" // Vous pouvez utiliser Markdown ou HTML ici
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert("Merci pour votre inscription !");
+      })
+      .catch(error => {
+        console.error("Erreur:", error);
+        alert("Une erreur est survenue. Veuillez réessayer.");
+      });
+    });
+  </script>
+</body>
+</html>
